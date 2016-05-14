@@ -1,30 +1,25 @@
 //
-//  RegisterViewController.m
+//  InfoViewController.m
 //  CongCong_IOS
 //
-//  Created by 吴冠龙 on 16/5/13.
+//  Created by 吴冠龙 on 16/5/14.
 //  Copyright © 2016年 吴冠龙. All rights reserved.
 //
 
-#import "RegisterViewController.h"
+#import "InfoViewController.h"
 
-@interface RegisterViewController ()
+@interface InfoViewController ()
 
 @end
 
-@implementation RegisterViewController
+@implementation InfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationController.navigationBarHidden = YES;
-    _regisPhone.borderStyle = UITextBorderStyleNone;
-    _regisQua.borderStyle = UITextBorderStyleNone;
-    _regisPass.borderStyle = UITextBorderStyleNone;
-    for(int i =1 ;i<4 ;i++){
-        UIView *view = (UIView *)[self.view viewWithTag:i];
-        view.layer.cornerRadius = 3;
-    }
+    _nameField.borderStyle = UITextBorderStyleNone;
+    [_manBtn setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    [_womanBtn setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,9 +37,16 @@
 }
 */
 
-- (IBAction)goBack:(id)sender {
+- (IBAction)popBack:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+- (IBAction)selectMan:(id)sender {
+}
+
+- (IBAction)selectWoman:(id)sender {
+}
+
+
 
 /*
  单击view，编辑结束
@@ -53,7 +55,18 @@
     [self.view endEditing:YES];
 }
 
-
+/*
+ 编辑结束关闭键盘
+ */
+- (IBAction)finishEdit:(id)sender {
+    [sender resignFirstResponder];
+    UITextField* text = (UITextField*)sender;
+    [(UITextField*)[self.view viewWithTag:text.tag+1] becomeFirstResponder];
+    
+}
+- (IBAction)backTap:(id)sender {
+    [self.nameField resignFirstResponder];
+}
 
 
 @end

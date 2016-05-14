@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492272471CE6E2C40093D256 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272401CE6E2C40093D256 /* InfoViewController.m */; };
+		492272481CE6E2C40093D256 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272421CE6E2C40093D256 /* LoginViewController.m */; };
+		492272491CE6E2C40093D256 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272441CE6E2C40093D256 /* RegisterViewController.m */; };
+		4922724A1CE6E2C40093D256 /* SchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272461CE6E2C40093D256 /* SchoolViewController.m */; };
+		4922724D1CE6E2D40093D256 /* Login_Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4922724B1CE6E2D40093D256 /* Login_Register.storyboard */; };
+		492272521CE6E3050093D256 /* CampusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272511CE6E3050093D256 /* CampusTableViewCell.m */; };
+		492272551CE6E3170093D256 /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272541CE6E3170093D256 /* PopView.m */; };
+		492272581CE7193D0093D256 /* School2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272571CE7193D0093D256 /* School2ViewController.m */; };
+		4922725B1CE71C4E0093D256 /* Campus2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4922725A1CE71C4E0093D256 /* Campus2TableViewCell.m */; };
+		4922725E1CE721580093D256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4922725D1CE721580093D256 /* Main.storyboard */; };
+		492272611CE721A90093D256 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272601CE721A90093D256 /* MainViewController.m */; };
 		494F76641CE5FDEB00D84F6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F76631CE5FDEB00D84F6C /* main.m */; };
 		494F76671CE5FDEB00D84F6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F76661CE5FDEB00D84F6C /* AppDelegate.m */; };
-		494F766D1CE5FDEB00D84F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494F766B1CE5FDEB00D84F6C /* Main.storyboard */; };
 		494F766F1CE5FDEB00D84F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494F766E1CE5FDEB00D84F6C /* Assets.xcassets */; };
 		494F76721CE5FDEB00D84F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494F76701CE5FDEB00D84F6C /* LaunchScreen.storyboard */; };
 		494F767D1CE5FDEB00D84F6C /* CongCong_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F767C1CE5FDEB00D84F6C /* CongCong_IOSTests.m */; };
 		494F76881CE5FDEB00D84F6C /* CongCong_IOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F76871CE5FDEB00D84F6C /* CongCong_IOSUITests.m */; };
-		496288F31CE60A14004680BB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496288F21CE60A14004680BB /* LoginViewController.m */; };
-		49F09E861CE615F100D38461 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F09E851CE615F100D38461 /* RegisterViewController.m */; };
 		61FA2ABD70D1C0A5C4150A1C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AFCEB48CC99AEF619D3FF4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +47,30 @@
 /* Begin PBXFileReference section */
 		0610D552653E89242D7AA937 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		42B23B7D198BF4F349C80210 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4922723F1CE6E2C40093D256 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		492272401CE6E2C40093D256 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		492272411CE6E2C40093D256 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		492272421CE6E2C40093D256 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		492272431CE6E2C40093D256 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		492272441CE6E2C40093D256 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		492272451CE6E2C40093D256 /* SchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolViewController.h; sourceTree = "<group>"; };
+		492272461CE6E2C40093D256 /* SchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolViewController.m; sourceTree = "<group>"; };
+		4922724C1CE6E2D40093D256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login_Register.storyboard; sourceTree = "<group>"; };
+		492272501CE6E3050093D256 /* CampusTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampusTableViewCell.h; sourceTree = "<group>"; };
+		492272511CE6E3050093D256 /* CampusTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusTableViewCell.m; sourceTree = "<group>"; };
+		492272531CE6E3170093D256 /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
+		492272541CE6E3170093D256 /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
+		492272561CE7193D0093D256 /* School2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = School2ViewController.h; sourceTree = "<group>"; };
+		492272571CE7193D0093D256 /* School2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = School2ViewController.m; sourceTree = "<group>"; };
+		492272591CE71C4E0093D256 /* Campus2TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus2TableViewCell.h; sourceTree = "<group>"; };
+		4922725A1CE71C4E0093D256 /* Campus2TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus2TableViewCell.m; sourceTree = "<group>"; };
+		4922725D1CE721580093D256 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4922725F1CE721A90093D256 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		492272601CE721A90093D256 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		494F765F1CE5FDEB00D84F6C /* CongCong_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CongCong_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494F76631CE5FDEB00D84F6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		494F76651CE5FDEB00D84F6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		494F76661CE5FDEB00D84F6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		494F766C1CE5FDEB00D84F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		494F766E1CE5FDEB00D84F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		494F76711CE5FDEB00D84F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		494F76731CE5FDEB00D84F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,10 +80,6 @@
 		494F76831CE5FDEB00D84F6C /* CongCong_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CongCong_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		494F76871CE5FDEB00D84F6C /* CongCong_IOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CongCong_IOSUITests.m; sourceTree = "<group>"; };
 		494F76891CE5FDEB00D84F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		496288F11CE60A14004680BB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Login_Register/LoginViewController.h; sourceTree = SOURCE_ROOT; };
-		496288F21CE60A14004680BB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Login_Register/LoginViewController.m; sourceTree = SOURCE_ROOT; };
-		49F09E841CE615F100D38461 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = Login_Register/RegisterViewController.h; sourceTree = SOURCE_ROOT; };
-		49F09E851CE615F100D38461 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = Login_Register/RegisterViewController.m; sourceTree = SOURCE_ROOT; };
 		E7AFCEB48CC99AEF619D3FF4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +109,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4922723E1CE6E29E0093D256 /* Login_Register */ = {
+			isa = PBXGroup;
+			children = (
+				4922724F1CE6E2F20093D256 /* TableViewCell */,
+				4922724E1CE6E2E20093D256 /* PopView */,
+				4922724B1CE6E2D40093D256 /* Login_Register.storyboard */,
+				4922723F1CE6E2C40093D256 /* InfoViewController.h */,
+				492272401CE6E2C40093D256 /* InfoViewController.m */,
+				492272411CE6E2C40093D256 /* LoginViewController.h */,
+				492272421CE6E2C40093D256 /* LoginViewController.m */,
+				492272431CE6E2C40093D256 /* RegisterViewController.h */,
+				492272441CE6E2C40093D256 /* RegisterViewController.m */,
+				492272451CE6E2C40093D256 /* SchoolViewController.h */,
+				492272461CE6E2C40093D256 /* SchoolViewController.m */,
+				492272561CE7193D0093D256 /* School2ViewController.h */,
+				492272571CE7193D0093D256 /* School2ViewController.m */,
+			);
+			name = Login_Register;
+			sourceTree = "<group>";
+		};
+		4922724E1CE6E2E20093D256 /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				492272531CE6E3170093D256 /* PopView.h */,
+				492272541CE6E3170093D256 /* PopView.m */,
+			);
+			name = PopView;
+			sourceTree = "<group>";
+		};
+		4922724F1CE6E2F20093D256 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				492272501CE6E3050093D256 /* CampusTableViewCell.h */,
+				492272511CE6E3050093D256 /* CampusTableViewCell.m */,
+				492272591CE71C4E0093D256 /* Campus2TableViewCell.h */,
+				4922725A1CE71C4E0093D256 /* Campus2TableViewCell.m */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		4922725C1CE721180093D256 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4922725D1CE721580093D256 /* Main.storyboard */,
+				4922725F1CE721A90093D256 /* MainViewController.h */,
+				492272601CE721A90093D256 /* MainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		494F76561CE5FDEB00D84F6C = {
 			isa = PBXGroup;
 			children = (
@@ -111,10 +184,10 @@
 		494F76611CE5FDEB00D84F6C /* CongCong_IOS */ = {
 			isa = PBXGroup;
 			children = (
-				496288F41CE60A19004680BB /* Login_Register */,
+				4922723E1CE6E29E0093D256 /* Login_Register */,
+				4922725C1CE721180093D256 /* Main */,
 				494F76651CE5FDEB00D84F6C /* AppDelegate.h */,
 				494F76661CE5FDEB00D84F6C /* AppDelegate.m */,
-				494F766B1CE5FDEB00D84F6C /* Main.storyboard */,
 				494F76701CE5FDEB00D84F6C /* LaunchScreen.storyboard */,
 				494F766E1CE5FDEB00D84F6C /* Assets.xcassets */,
 				494F76731CE5FDEB00D84F6C /* Info.plist */,
@@ -147,17 +220,6 @@
 				494F76891CE5FDEB00D84F6C /* Info.plist */,
 			);
 			path = CongCong_IOSUITests;
-			sourceTree = "<group>";
-		};
-		496288F41CE60A19004680BB /* Login_Register */ = {
-			isa = PBXGroup;
-			children = (
-				496288F11CE60A14004680BB /* LoginViewController.h */,
-				496288F21CE60A14004680BB /* LoginViewController.m */,
-				49F09E841CE615F100D38461 /* RegisterViewController.h */,
-				49F09E851CE615F100D38461 /* RegisterViewController.m */,
-			);
-			name = Login_Register;
 			sourceTree = "<group>";
 		};
 		97334BCBAE0AD0ACAA36E690 /* Pods */ = {
@@ -284,8 +346,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				494F76721CE5FDEB00D84F6C /* LaunchScreen.storyboard in Resources */,
+				4922724D1CE6E2D40093D256 /* Login_Register.storyboard in Resources */,
 				494F766F1CE5FDEB00D84F6C /* Assets.xcassets in Resources */,
-				494F766D1CE5FDEB00D84F6C /* Main.storyboard in Resources */,
+				4922725E1CE721580093D256 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +421,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492272611CE721A90093D256 /* MainViewController.m in Sources */,
+				4922724A1CE6E2C40093D256 /* SchoolViewController.m in Sources */,
+				4922725B1CE71C4E0093D256 /* Campus2TableViewCell.m in Sources */,
+				492272521CE6E3050093D256 /* CampusTableViewCell.m in Sources */,
+				492272491CE6E2C40093D256 /* RegisterViewController.m in Sources */,
+				492272481CE6E2C40093D256 /* LoginViewController.m in Sources */,
 				494F76671CE5FDEB00D84F6C /* AppDelegate.m in Sources */,
+				492272581CE7193D0093D256 /* School2ViewController.m in Sources */,
 				494F76641CE5FDEB00D84F6C /* main.m in Sources */,
-				496288F31CE60A14004680BB /* LoginViewController.m in Sources */,
-				49F09E861CE615F100D38461 /* RegisterViewController.m in Sources */,
+				492272551CE6E3170093D256 /* PopView.m in Sources */,
+				492272471CE6E2C40093D256 /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,12 +467,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		494F766B1CE5FDEB00D84F6C /* Main.storyboard */ = {
+		4922724B1CE6E2D40093D256 /* Login_Register.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				494F766C1CE5FDEB00D84F6C /* Base */,
+				4922724C1CE6E2D40093D256 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login_Register.storyboard;
 			sourceTree = "<group>";
 		};
 		494F76701CE5FDEB00D84F6C /* LaunchScreen.storyboard */ = {
