@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490773351CE9ACFC0095E491 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490773341CE9ACFC0095E491 /* Contact.storyboard */; };
+		490773381CE9AF850095E491 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490773371CE9AF850095E491 /* ContactViewController.m */; };
+		4907733C1CE9B5400095E491 /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4907733B1CE9B5400095E491 /* ContactTableViewCell.m */; };
 		492272471CE6E2C40093D256 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272401CE6E2C40093D256 /* InfoViewController.m */; };
 		492272481CE6E2C40093D256 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272421CE6E2C40093D256 /* LoginViewController.m */; };
 		492272491CE6E2C40093D256 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272441CE6E2C40093D256 /* RegisterViewController.m */; };
@@ -24,6 +27,8 @@
 		494F76721CE5FDEB00D84F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494F76701CE5FDEB00D84F6C /* LaunchScreen.storyboard */; };
 		494F767D1CE5FDEB00D84F6C /* CongCong_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F767C1CE5FDEB00D84F6C /* CongCong_IOSTests.m */; };
 		494F76881CE5FDEB00D84F6C /* CongCong_IOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F76871CE5FDEB00D84F6C /* CongCong_IOSUITests.m */; };
+		49A7DB091CE843F500364020 /* TimeAxis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A7DB081CE843F500364020 /* TimeAxis.storyboard */; };
+		49A7DB0C1CE8446A00364020 /* TimeAxisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A7DB0B1CE8446A00364020 /* TimeAxisViewController.m */; };
 		61FA2ABD70D1C0A5C4150A1C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AFCEB48CC99AEF619D3FF4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +52,11 @@
 /* Begin PBXFileReference section */
 		0610D552653E89242D7AA937 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		42B23B7D198BF4F349C80210 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		490773341CE9ACFC0095E491 /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		490773361CE9AF850095E491 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		490773371CE9AF850095E491 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		4907733A1CE9B5400095E491 /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		4907733B1CE9B5400095E491 /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
 		4922723F1CE6E2C40093D256 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		492272401CE6E2C40093D256 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		492272411CE6E2C40093D256 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -80,6 +90,9 @@
 		494F76831CE5FDEB00D84F6C /* CongCong_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CongCong_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		494F76871CE5FDEB00D84F6C /* CongCong_IOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CongCong_IOSUITests.m; sourceTree = "<group>"; };
 		494F76891CE5FDEB00D84F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A7DB081CE843F500364020 /* TimeAxis.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeAxis.storyboard; sourceTree = "<group>"; };
+		49A7DB0A1CE8446A00364020 /* TimeAxisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeAxisViewController.h; sourceTree = "<group>"; };
+		49A7DB0B1CE8446A00364020 /* TimeAxisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeAxisViewController.m; sourceTree = "<group>"; };
 		E7AFCEB48CC99AEF619D3FF4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +122,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490773331CE9AC100095E491 /* ContactPeople */ = {
+			isa = PBXGroup;
+			children = (
+				490773391CE9B5230095E491 /* TableViewCell */,
+				490773341CE9ACFC0095E491 /* Contact.storyboard */,
+				490773361CE9AF850095E491 /* ContactViewController.h */,
+				490773371CE9AF850095E491 /* ContactViewController.m */,
+			);
+			name = ContactPeople;
+			sourceTree = "<group>";
+		};
+		490773391CE9B5230095E491 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4907733A1CE9B5400095E491 /* ContactTableViewCell.h */,
+				4907733B1CE9B5400095E491 /* ContactTableViewCell.m */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
 		4922723E1CE6E29E0093D256 /* Login_Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +217,8 @@
 		494F76611CE5FDEB00D84F6C /* CongCong_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				490773331CE9AC100095E491 /* ContactPeople */,
+				49A7DB071CE8431800364020 /* TimeAxis */,
 				4922723E1CE6E29E0093D256 /* Login_Register */,
 				4922725C1CE721180093D256 /* Main */,
 				494F76651CE5FDEB00D84F6C /* AppDelegate.h */,
@@ -220,6 +255,16 @@
 				494F76891CE5FDEB00D84F6C /* Info.plist */,
 			);
 			path = CongCong_IOSUITests;
+			sourceTree = "<group>";
+		};
+		49A7DB071CE8431800364020 /* TimeAxis */ = {
+			isa = PBXGroup;
+			children = (
+				49A7DB081CE843F500364020 /* TimeAxis.storyboard */,
+				49A7DB0A1CE8446A00364020 /* TimeAxisViewController.h */,
+				49A7DB0B1CE8446A00364020 /* TimeAxisViewController.m */,
+			);
+			name = TimeAxis;
 			sourceTree = "<group>";
 		};
 		97334BCBAE0AD0ACAA36E690 /* Pods */ = {
@@ -346,7 +391,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				494F76721CE5FDEB00D84F6C /* LaunchScreen.storyboard in Resources */,
+				490773351CE9ACFC0095E491 /* Contact.storyboard in Resources */,
 				4922724D1CE6E2D40093D256 /* Login_Register.storyboard in Resources */,
+				49A7DB091CE843F500364020 /* TimeAxis.storyboard in Resources */,
 				494F766F1CE5FDEB00D84F6C /* Assets.xcassets in Resources */,
 				4922725E1CE721580093D256 /* Main.storyboard in Resources */,
 			);
@@ -423,8 +470,11 @@
 			files = (
 				492272611CE721A90093D256 /* MainViewController.m in Sources */,
 				4922724A1CE6E2C40093D256 /* SchoolViewController.m in Sources */,
+				4907733C1CE9B5400095E491 /* ContactTableViewCell.m in Sources */,
+				49A7DB0C1CE8446A00364020 /* TimeAxisViewController.m in Sources */,
 				4922725B1CE71C4E0093D256 /* Campus2TableViewCell.m in Sources */,
 				492272521CE6E3050093D256 /* CampusTableViewCell.m in Sources */,
+				490773381CE9AF850095E491 /* ContactViewController.m in Sources */,
 				492272491CE6E2C40093D256 /* RegisterViewController.m in Sources */,
 				492272481CE6E2C40093D256 /* LoginViewController.m in Sources */,
 				494F76671CE5FDEB00D84F6C /* AppDelegate.m in Sources */,

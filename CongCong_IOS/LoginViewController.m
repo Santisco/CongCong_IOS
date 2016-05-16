@@ -20,6 +20,8 @@
     self.navigationController.navigationBarHidden = YES;
     _username.borderStyle = UITextBorderStyleNone;
     _password.borderStyle = UITextBorderStyleNone;
+
+
 }
 
 - (void)didReceiveMemoryWarning {

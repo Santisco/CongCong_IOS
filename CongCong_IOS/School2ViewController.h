@@ -14,5 +14,6 @@
 
 - (IBAction)backTrack:(id)sender;
 
+- (IBAction)backRoot:(id)sender;
 
 @end

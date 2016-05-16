@@ -62,4 +62,8 @@
 - (IBAction)backTrack:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (IBAction)backRoot:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end
