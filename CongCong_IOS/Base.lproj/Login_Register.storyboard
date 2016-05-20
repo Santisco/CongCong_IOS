@@ -39,7 +39,14 @@
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="请输入用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXd-0P-wEW">
                                 <rect key="frame" x="125" y="296" width="169" height="30"/>
-                                <attributedString key="attributedText"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="wgl">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="backTap:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="R8R-kg-c37"/>
@@ -48,7 +55,14 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSg-rN-Cdp">
                                 <rect key="frame" x="125" y="351" width="169" height="30"/>
-                                <attributedString key="attributedText"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="123">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="smallSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="backTap:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aEV-G5-VhS"/>

@@ -27,6 +27,9 @@
 		494F76721CE5FDEB00D84F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494F76701CE5FDEB00D84F6C /* LaunchScreen.storyboard */; };
 		494F767D1CE5FDEB00D84F6C /* CongCong_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F767C1CE5FDEB00D84F6C /* CongCong_IOSTests.m */; };
 		494F76881CE5FDEB00D84F6C /* CongCong_IOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F76871CE5FDEB00D84F6C /* CongCong_IOSUITests.m */; };
+		499BD66F1CEAADAB00AD1787 /* DialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499BD66E1CEAADAB00AD1787 /* DialogViewController.m */; };
+		499BD6721CEAB74F00AD1787 /* DialogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 499BD6711CEAB74F00AD1787 /* DialogTableViewCell.m */; };
+		499BD6781CEBF2E000AD1787 /* DialogTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 499BD6771CEBF2E000AD1787 /* DialogTableViewCell2.m */; };
 		49A7DB091CE843F500364020 /* TimeAxis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A7DB081CE843F500364020 /* TimeAxis.storyboard */; };
 		49A7DB0C1CE8446A00364020 /* TimeAxisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A7DB0B1CE8446A00364020 /* TimeAxisViewController.m */; };
 		61FA2ABD70D1C0A5C4150A1C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AFCEB48CC99AEF619D3FF4 /* libPods.a */; };
@@ -90,6 +93,12 @@
 		494F76831CE5FDEB00D84F6C /* CongCong_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CongCong_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		494F76871CE5FDEB00D84F6C /* CongCong_IOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CongCong_IOSUITests.m; sourceTree = "<group>"; };
 		494F76891CE5FDEB00D84F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499BD66D1CEAADAB00AD1787 /* DialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogViewController.h; sourceTree = "<group>"; };
+		499BD66E1CEAADAB00AD1787 /* DialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogViewController.m; sourceTree = "<group>"; };
+		499BD6701CEAB74F00AD1787 /* DialogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogTableViewCell.h; sourceTree = "<group>"; };
+		499BD6711CEAB74F00AD1787 /* DialogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogTableViewCell.m; sourceTree = "<group>"; };
+		499BD6761CEBF2E000AD1787 /* DialogTableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogTableViewCell2.h; sourceTree = "<group>"; };
+		499BD6771CEBF2E000AD1787 /* DialogTableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogTableViewCell2.m; sourceTree = "<group>"; };
 		49A7DB081CE843F500364020 /* TimeAxis.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeAxis.storyboard; sourceTree = "<group>"; };
 		49A7DB0A1CE8446A00364020 /* TimeAxisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeAxisViewController.h; sourceTree = "<group>"; };
 		49A7DB0B1CE8446A00364020 /* TimeAxisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeAxisViewController.m; sourceTree = "<group>"; };
@@ -129,6 +138,8 @@
 				490773341CE9ACFC0095E491 /* Contact.storyboard */,
 				490773361CE9AF850095E491 /* ContactViewController.h */,
 				490773371CE9AF850095E491 /* ContactViewController.m */,
+				499BD66D1CEAADAB00AD1787 /* DialogViewController.h */,
+				499BD66E1CEAADAB00AD1787 /* DialogViewController.m */,
 			);
 			name = ContactPeople;
 			sourceTree = "<group>";
@@ -138,6 +149,10 @@
 			children = (
 				4907733A1CE9B5400095E491 /* ContactTableViewCell.h */,
 				4907733B1CE9B5400095E491 /* ContactTableViewCell.m */,
+				499BD6701CEAB74F00AD1787 /* DialogTableViewCell.h */,
+				499BD6711CEAB74F00AD1787 /* DialogTableViewCell.m */,
+				499BD6761CEBF2E000AD1787 /* DialogTableViewCell2.h */,
+				499BD6771CEBF2E000AD1787 /* DialogTableViewCell2.m */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -471,9 +486,12 @@
 				492272611CE721A90093D256 /* MainViewController.m in Sources */,
 				4922724A1CE6E2C40093D256 /* SchoolViewController.m in Sources */,
 				4907733C1CE9B5400095E491 /* ContactTableViewCell.m in Sources */,
+				499BD6721CEAB74F00AD1787 /* DialogTableViewCell.m in Sources */,
 				49A7DB0C1CE8446A00364020 /* TimeAxisViewController.m in Sources */,
+				499BD6781CEBF2E000AD1787 /* DialogTableViewCell2.m in Sources */,
 				4922725B1CE71C4E0093D256 /* Campus2TableViewCell.m in Sources */,
 				492272521CE6E3050093D256 /* CampusTableViewCell.m in Sources */,
+				499BD66F1CEAADAB00AD1787 /* DialogViewController.m in Sources */,
 				490773381CE9AF850095E491 /* ContactViewController.m in Sources */,
 				492272491CE6E2C40093D256 /* RegisterViewController.m in Sources */,
 				492272481CE6E2C40093D256 /* LoginViewController.m in Sources */,

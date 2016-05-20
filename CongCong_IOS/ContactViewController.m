@@ -55,6 +55,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"link" sender:nil];
+}
+
 /*
 #pragma mark - Navigation
 
