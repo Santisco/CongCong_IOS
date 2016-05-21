@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFNetWorking.h"
 
 @interface LoginViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *username;

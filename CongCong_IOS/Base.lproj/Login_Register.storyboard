@@ -40,7 +40,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="请输入用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXd-0P-wEW">
                                 <rect key="frame" x="125" y="296" width="169" height="30"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="wgl">
+                                    <fragment content="gamelife">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -56,14 +56,14 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSg-rN-Cdp">
                                 <rect key="frame" x="125" y="351" width="169" height="30"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="123">
+                                    <fragment content="password">
                                         <attributes>
                                             <font key="NSFont" metaFont="smallSystem"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="backTap:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aEV-G5-VhS"/>
                                     <action selector="finishEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="1mA-NQ-pac"/>
@@ -233,6 +233,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="registorMake:" destination="fTS-zH-9Jl" eventType="touchUpInside" id="U1v-cU-hOe"/>
                                     <segue destination="MzZ-vJ-yF2" kind="show" id="r51-tg-gZT"/>
                                 </connections>
                             </button>

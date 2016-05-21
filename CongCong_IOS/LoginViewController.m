@@ -65,5 +65,33 @@
     if ([_username.text isEqualToString:@"wgl"]&&[_password.text isEqualToString:@"123"]) {
         [self performSegueWithIdentifier:@"linkMain" sender:nil];
     }
+    NSArray *cookiesArray = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+    for (NSHTTPCookie *cookie in cookiesArray) {
+        [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
+    }
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+    NSMutableDictionary *plist = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    NSString *apiUrl = [plist objectForKey:@"apiUrl"];
+    apiUrl = [apiUrl stringByAppendingString:@"/sign-in"];
+    NSLog(@"%@",apiUrl);
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString: apiUrl]];
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    
+    NSMutableDictionary *dictt = [NSMutableDictionary dictionary];
+    dictt[@"identity"] = self.username.text;
+    dictt[@"password"] =self.password.text;
+    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+    mgr.responseSerializer = [AFCompoundResponseSerializer serializer];
+    mgr.requestSerializer = [AFHTTPRequestSerializer serializer];
+
+    [mgr POST:apiUrl parameters:dictt success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Success: %@", operation.responseString);
+    }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Failure: %@", error);
+    }];
+    [operation start];
+
+    
 }
+
 @end

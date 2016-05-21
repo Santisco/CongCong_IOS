@@ -21,6 +21,7 @@
 		4922725B1CE71C4E0093D256 /* Campus2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4922725A1CE71C4E0093D256 /* Campus2TableViewCell.m */; };
 		4922725E1CE721580093D256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4922725D1CE721580093D256 /* Main.storyboard */; };
 		492272611CE721A90093D256 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492272601CE721A90093D256 /* MainViewController.m */; };
+		49229E5C1CF0076300E2E200 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49229E5B1CF0076300E2E200 /* config.plist */; };
 		494F76641CE5FDEB00D84F6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F76631CE5FDEB00D84F6C /* main.m */; };
 		494F76671CE5FDEB00D84F6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F76661CE5FDEB00D84F6C /* AppDelegate.m */; };
 		494F766F1CE5FDEB00D84F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494F766E1CE5FDEB00D84F6C /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		4922725D1CE721580093D256 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4922725F1CE721A90093D256 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		492272601CE721A90093D256 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		49229E5B1CF0076300E2E200 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		494F765F1CE5FDEB00D84F6C /* CongCong_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CongCong_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494F76631CE5FDEB00D84F6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		494F76651CE5FDEB00D84F6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,12 +165,12 @@
 				4922724F1CE6E2F20093D256 /* TableViewCell */,
 				4922724E1CE6E2E20093D256 /* PopView */,
 				4922724B1CE6E2D40093D256 /* Login_Register.storyboard */,
-				4922723F1CE6E2C40093D256 /* InfoViewController.h */,
-				492272401CE6E2C40093D256 /* InfoViewController.m */,
 				492272411CE6E2C40093D256 /* LoginViewController.h */,
 				492272421CE6E2C40093D256 /* LoginViewController.m */,
 				492272431CE6E2C40093D256 /* RegisterViewController.h */,
 				492272441CE6E2C40093D256 /* RegisterViewController.m */,
+				4922723F1CE6E2C40093D256 /* InfoViewController.h */,
+				492272401CE6E2C40093D256 /* InfoViewController.m */,
 				492272451CE6E2C40093D256 /* SchoolViewController.h */,
 				492272461CE6E2C40093D256 /* SchoolViewController.m */,
 				492272561CE7193D0093D256 /* School2ViewController.h */,
@@ -241,6 +243,7 @@
 				494F76701CE5FDEB00D84F6C /* LaunchScreen.storyboard */,
 				494F766E1CE5FDEB00D84F6C /* Assets.xcassets */,
 				494F76731CE5FDEB00D84F6C /* Info.plist */,
+				49229E5B1CF0076300E2E200 /* config.plist */,
 				494F76621CE5FDEB00D84F6C /* Supporting Files */,
 			);
 			path = CongCong_IOS;
@@ -405,6 +408,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49229E5C1CF0076300E2E200 /* config.plist in Resources */,
 				494F76721CE5FDEB00D84F6C /* LaunchScreen.storyboard in Resources */,
 				490773351CE9ACFC0095E491 /* Contact.storyboard in Resources */,
 				4922724D1CE6E2D40093D256 /* Login_Register.storyboard in Resources */,

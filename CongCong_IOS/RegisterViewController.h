@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *regisQua;
 @property (weak, nonatomic) IBOutlet UITextField *regisPass;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
+- (IBAction)registorMake:(id)sender;
 
 
 @end
