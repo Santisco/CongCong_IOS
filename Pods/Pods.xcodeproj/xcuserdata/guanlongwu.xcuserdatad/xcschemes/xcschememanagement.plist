@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JRSwizzle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D7B64B481DE1653CDFEF9DC0A650BD7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2BD0C9D656485354FAF1A693AF358703</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5EBBC9262E70F770D61B9E85AE3C0179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>777C6D33FEF84D13A8801FF0B8A83210</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC8C4BA25F97098EE1F167428AE028C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

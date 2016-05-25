@@ -14,6 +14,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *regisQua;
 @property (weak, nonatomic) IBOutlet UITextField *regisPass;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
+@property NSString *phoneNum;
+@property NSString *emailNum;
+@property NSString *passNum;
+
 - (IBAction)registorMake:(id)sender;
 
 

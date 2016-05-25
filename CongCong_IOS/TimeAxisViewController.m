@@ -28,10 +28,10 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    [UIView animateWithDuration:2.0 delay:0.0 options:UIViewAnimationOptionRepeat|UIViewAnimationOptionCurveLinear animations:^{
-        _ring1.transform = CGAffineTransformRotate(_ring1.transform, 180*(M_PI)/180);
-        _ring2.transform = CGAffineTransformRotate(_ring2.transform, 180*(M_PI)/180);
-        _ring3.transform = CGAffineTransformRotate(_ring3.transform, 180*(M_PI)/180);
+    [UIView animateWithDuration:1.0 delay:0.0 options:UIViewAnimationOptionRepeat|UIViewAnimationOptionCurveLinear animations:^{
+        _ring1.transform = CGAffineTransformRotate(_ring1.transform, 180*(M_PI_2)/180);
+        _ring2.transform = CGAffineTransformRotate(_ring2.transform, 180*(-M_PI_2)/180);
+        _ring3.transform = CGAffineTransformRotate(_ring3.transform, 180*(-M_PI_2)/180);
     }completion:nil];
 
 }

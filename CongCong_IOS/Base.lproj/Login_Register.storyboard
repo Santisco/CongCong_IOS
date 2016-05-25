@@ -69,13 +69,11 @@
                                     <action selector="finishEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="1mA-NQ-pac"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pc6-PW-MwX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="72px 邮箱-1" translatesAutoresizingMaskIntoConstraints="NO" id="pc6-PW-MwX">
                                 <rect key="frame" x="74" y="291" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.20784313725490197" green="0.4823529411764706" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bs3-w8-gq2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="72px 锁-1" translatesAutoresizingMaskIntoConstraints="NO" id="bs3-w8-gq2">
                                 <rect key="frame" x="74" y="346" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.20784313725490197" green="0.4823529411764706" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcR-q5-XCc">
                                 <rect key="frame" x="101" y="420" width="172" height="34"/>
@@ -166,8 +164,8 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="注册" id="KbA-DY-bLR">
-                                        <barButtonItem key="leftBarButtonItem" title="返回" style="plain" id="BSw-rD-vNS">
-                                            <color key="tintColor" red="0.50196078430000002" green="0.71764705880000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <barButtonItem key="leftBarButtonItem" image="24px 返回-1" style="plain" id="BSw-rD-vNS">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             <connections>
                                                 <action selector="goBack:" destination="fTS-zH-9Jl" id="Ixg-Zo-XCP"/>
                                             </connections>
@@ -197,7 +195,7 @@
                                         <rect key="frame" x="5" y="5" width="30" height="30"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7I-0J-XK9">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7I-0J-XK9">
                                         <rect key="frame" x="52" y="10" width="210" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -234,7 +232,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="registorMake:" destination="fTS-zH-9Jl" eventType="touchUpInside" id="U1v-cU-hOe"/>
-                                    <segue destination="MzZ-vJ-yF2" kind="show" id="r51-tg-gZT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -247,6 +244,7 @@
                         <outlet property="regisPass" destination="QoO-T4-64Z" id="Jh8-qV-zHw"/>
                         <outlet property="regisPhone" destination="Ukk-ZF-xdI" id="dbC-yY-GTs"/>
                         <outlet property="regisQua" destination="p7I-0J-XK9" id="0N6-oM-JFn"/>
+                        <segue destination="MzZ-vJ-yF2" kind="show" identifier="selfInfo" id="wOw-yV-kk9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVM-ZW-ly2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,8 +275,8 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="个人信息" id="oc1-3n-I2A">
-                                        <barButtonItem key="leftBarButtonItem" title="返回" id="gco-pQ-CGR">
-                                            <color key="tintColor" red="0.50196078430000002" green="0.71764705880000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <barButtonItem key="leftBarButtonItem" image="24px 返回-1" id="gco-pQ-CGR">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             <connections>
                                                 <action selector="popBack:" destination="MzZ-vJ-yF2" id="pBj-5Z-Kgd"/>
                                             </connections>
@@ -362,7 +360,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="K2B-6t-ym4" kind="show" id="Vhr-Pe-rEg"/>
+                                    <action selector="finishRegister:" destination="MzZ-vJ-yF2" eventType="touchUpInside" id="gmV-G9-oUT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUm-06-G8Z">
@@ -634,6 +632,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="24px 返回-1" width="24" height="24"/>
+        <image name="72px 邮箱-1" width="72" height="72"/>
+        <image name="72px 锁-1" width="72" height="72"/>
         <image name="loginPic" width="516" height="562"/>
     </resources>
 </document>

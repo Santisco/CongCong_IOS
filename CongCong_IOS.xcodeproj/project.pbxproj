@@ -33,6 +33,7 @@
 		499BD6781CEBF2E000AD1787 /* DialogTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 499BD6771CEBF2E000AD1787 /* DialogTableViewCell2.m */; };
 		49A7DB091CE843F500364020 /* TimeAxis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A7DB081CE843F500364020 /* TimeAxis.storyboard */; };
 		49A7DB0C1CE8446A00364020 /* TimeAxisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A7DB0B1CE8446A00364020 /* TimeAxisViewController.m */; };
+		49D7823F1CF5E73F00D41D81 /* NSDictionary+DictionaryOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7823E1CF5E73F00D41D81 /* NSDictionary+DictionaryOutput.m */; };
 		61FA2ABD70D1C0A5C4150A1C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AFCEB48CC99AEF619D3FF4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		490773371CE9AF850095E491 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		4907733A1CE9B5400095E491 /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
 		4907733B1CE9B5400095E491 /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
+		490984861CF5F280002D1D0D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Login_Register.strings"; sourceTree = "<group>"; };
+		490984871CF5F280002D1D0D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		4922723F1CE6E2C40093D256 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		492272401CE6E2C40093D256 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		492272411CE6E2C40093D256 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 		49A7DB081CE843F500364020 /* TimeAxis.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeAxis.storyboard; sourceTree = "<group>"; };
 		49A7DB0A1CE8446A00364020 /* TimeAxisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeAxisViewController.h; sourceTree = "<group>"; };
 		49A7DB0B1CE8446A00364020 /* TimeAxisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeAxisViewController.m; sourceTree = "<group>"; };
+		49D7823D1CF5E73F00D41D81 /* NSDictionary+DictionaryOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DictionaryOutput.h"; sourceTree = "<group>"; };
+		49D7823E1CF5E73F00D41D81 /* NSDictionary+DictionaryOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DictionaryOutput.m"; sourceTree = "<group>"; };
 		E7AFCEB48CC99AEF619D3FF4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -234,16 +239,11 @@
 		494F76611CE5FDEB00D84F6C /* CongCong_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				4985A18F1CF04F89007970FD /* AppDelegate */,
 				490773331CE9AC100095E491 /* ContactPeople */,
 				49A7DB071CE8431800364020 /* TimeAxis */,
 				4922723E1CE6E29E0093D256 /* Login_Register */,
 				4922725C1CE721180093D256 /* Main */,
-				494F76651CE5FDEB00D84F6C /* AppDelegate.h */,
-				494F76661CE5FDEB00D84F6C /* AppDelegate.m */,
-				494F76701CE5FDEB00D84F6C /* LaunchScreen.storyboard */,
-				494F766E1CE5FDEB00D84F6C /* Assets.xcassets */,
-				494F76731CE5FDEB00D84F6C /* Info.plist */,
-				49229E5B1CF0076300E2E200 /* config.plist */,
 				494F76621CE5FDEB00D84F6C /* Supporting Files */,
 			);
 			path = CongCong_IOS;
@@ -252,6 +252,10 @@
 		494F76621CE5FDEB00D84F6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				494F76701CE5FDEB00D84F6C /* LaunchScreen.storyboard */,
+				494F766E1CE5FDEB00D84F6C /* Assets.xcassets */,
+				494F76731CE5FDEB00D84F6C /* Info.plist */,
+				49229E5B1CF0076300E2E200 /* config.plist */,
 				494F76631CE5FDEB00D84F6C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -273,6 +277,17 @@
 				494F76891CE5FDEB00D84F6C /* Info.plist */,
 			);
 			path = CongCong_IOSUITests;
+			sourceTree = "<group>";
+		};
+		4985A18F1CF04F89007970FD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				494F76651CE5FDEB00D84F6C /* AppDelegate.h */,
+				494F76661CE5FDEB00D84F6C /* AppDelegate.m */,
+				49D7823D1CF5E73F00D41D81 /* NSDictionary+DictionaryOutput.h */,
+				49D7823E1CF5E73F00D41D81 /* NSDictionary+DictionaryOutput.m */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 		49A7DB071CE8431800364020 /* TimeAxis */ = {
@@ -500,6 +515,7 @@
 				492272491CE6E2C40093D256 /* RegisterViewController.m in Sources */,
 				492272481CE6E2C40093D256 /* LoginViewController.m in Sources */,
 				494F76671CE5FDEB00D84F6C /* AppDelegate.m in Sources */,
+				49D7823F1CF5E73F00D41D81 /* NSDictionary+DictionaryOutput.m in Sources */,
 				492272581CE7193D0093D256 /* School2ViewController.m in Sources */,
 				494F76641CE5FDEB00D84F6C /* main.m in Sources */,
 				492272551CE6E3170093D256 /* PopView.m in Sources */,
@@ -543,6 +559,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4922724C1CE6E2D40093D256 /* Base */,
+				490984861CF5F280002D1D0D /* zh-Hans */,
 			);
 			name = Login_Register.storyboard;
 			sourceTree = "<group>";
@@ -551,6 +568,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				494F76711CE5FDEB00D84F6C /* Base */,
+				490984871CF5F280002D1D0D /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

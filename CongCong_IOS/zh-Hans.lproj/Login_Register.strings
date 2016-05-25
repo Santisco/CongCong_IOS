@@ -1,0 +1,111 @@
+
+/* Class = "UIBarButtonItem"; title = "返回"; ObjectID = "452-Dx-Sxx"; */
+"452-Dx-Sxx.title" = "返回";
+
+/* Class = "UIBarButtonItem"; title = "完成"; ObjectID = "4cA-hq-iRv"; */
+"4cA-hq-iRv.title" = "完成";
+
+/* Class = "UIButton"; normalTitle = "上传头像"; ObjectID = "4ks-Yq-4wu"; */
+"4ks-Yq-4wu.normalTitle" = "上传头像";
+
+/* Class = "UIBarButtonItem"; title = "完成"; ObjectID = "8CQ-ic-Dn5"; */
+"8CQ-ic-Dn5.title" = "完成";
+
+/* Class = "UITextField"; placeholder = "请输入姓名"; ObjectID = "9mT-03-GNV"; */
+"9mT-03-GNV.placeholder" = "请输入姓名";
+
+/* Class = "UIButton"; normalTitle = "女"; ObjectID = "ABA-r4-iKf"; */
+"ABA-r4-iKf.normalTitle" = "女";
+
+/* Class = "UIButton"; normalTitle = "快速注册"; ObjectID = "AFq-Td-3G1"; */
+"AFq-Td-3G1.normalTitle" = "快速注册";
+
+/* Class = "UIButton"; normalTitle = "button"; ObjectID = "B6b-3L-Rx0"; */
+"B6b-3L-Rx0.normalTitle" = "button";
+
+/* Class = "UIViewController"; title = "登陆"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "登陆";
+
+/* Class = "UINavigationItem"; title = "编辑学校"; ObjectID = "Bxs-Ll-emC"; */
+"Bxs-Ll-emC.title" = "编辑学校";
+
+/* Class = "UIButton"; normalTitle = "跳过"; ObjectID = "CUm-06-G8Z"; */
+"CUm-06-G8Z.normalTitle" = "跳过";
+
+/* Class = "UIButton"; normalTitle = "登陆"; ObjectID = "CcR-q5-XCc"; */
+"CcR-q5-XCc.normalTitle" = "登陆";
+
+/* Class = "UILabel"; text = "大学"; ObjectID = "I3t-31-12s"; */
+"I3t-31-12s.text" = "大学";
+
+/* Class = "UIViewController"; title = "编辑学校"; ObjectID = "K2B-6t-ym4"; */
+"K2B-6t-ym4.title" = "编辑学校";
+
+/* Class = "UINavigationItem"; title = "注册"; ObjectID = "KbA-DY-bLR"; */
+"KbA-DY-bLR.title" = "注册";
+
+/* Class = "UIViewController"; title = "个人信息"; ObjectID = "MzZ-vJ-yF2"; */
+"MzZ-vJ-yF2.title" = "个人信息";
+
+/* Class = "UILabel"; text = "其他方式登陆"; ObjectID = "NFg-UI-ya6"; */
+"NFg-UI-ya6.text" = "其他方式登陆";
+
+/* Class = "UITextField"; placeholder = "请输入用户名"; ObjectID = "NXd-0P-wEW"; */
+"NXd-0P-wEW.placeholder" = "请输入用户名";
+
+/* Class = "UITextField"; placeholder = "请输入密码"; ObjectID = "QoO-T4-64Z"; */
+"QoO-T4-64Z.placeholder" = "请输入密码";
+
+/* Class = "UILabel"; text = "地区"; ObjectID = "R4j-Ue-fWy"; */
+"R4j-Ue-fWy.text" = "地区";
+
+/* Class = "UINavigationItem"; title = "编辑学校"; ObjectID = "SGR-eP-JqC"; */
+"SGR-eP-JqC.title" = "编辑学校";
+
+/* Class = "UITextField"; placeholder = "请输入手机号"; ObjectID = "Ukk-ZF-xdI"; */
+"Ukk-ZF-xdI.placeholder" = "请输入手机号";
+
+/* Class = "UIButton"; normalTitle = "男"; ObjectID = "YN8-Zo-8hE"; */
+"YN8-Zo-8hE.normalTitle" = "男";
+
+/* Class = "UIButton"; normalTitle = "用户协议"; ObjectID = "aCC-Ck-CWj"; */
+"aCC-Ck-CWj.normalTitle" = "用户协议";
+
+/* Class = "UILabel"; text = "编辑"; ObjectID = "dIo-s3-hDw"; */
+"dIo-s3-hDw.text" = "编辑";
+
+/* Class = "UIViewController"; title = "注册"; ObjectID = "fTS-zH-9Jl"; */
+"fTS-zH-9Jl.title" = "注册";
+
+/* Class = "UIButton"; normalTitle = "忘记密码"; ObjectID = "fXX-Tx-0EM"; */
+"fXX-Tx-0EM.normalTitle" = "忘记密码";
+
+/* Class = "UIButton"; normalTitle = "下一步"; ObjectID = "gIb-Ub-huU"; */
+"gIb-Ub-huU.normalTitle" = "下一步";
+
+/* Class = "UITextField"; placeholder = "请输入密码"; ObjectID = "jSg-rN-Cdp"; */
+"jSg-rN-Cdp.placeholder" = "请输入密码";
+
+/* Class = "UILabel"; text = "编辑"; ObjectID = "jzr-zh-K80"; */
+"jzr-zh-K80.text" = "编辑";
+
+/* Class = "UILabel"; text = "点击下一步表示同意"; ObjectID = "kmH-oo-c9I"; */
+"kmH-oo-c9I.text" = "点击下一步表示同意";
+
+/* Class = "UINavigationItem"; title = "个人信息"; ObjectID = "oc1-3n-I2A"; */
+"oc1-3n-I2A.title" = "个人信息";
+
+/* Class = "UITextField"; placeholder = "请输入邮箱"; ObjectID = "p7I-0J-XK9"; */
+"p7I-0J-XK9.placeholder" = "请输入邮箱";
+
+/* Class = "UIButton"; normalTitle = "完成"; ObjectID = "pvN-2P-KeT"; */
+"pvN-2P-KeT.normalTitle" = "完成";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "sZY-1m-r60"; */
+"sZY-1m-r60.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "返回"; ObjectID = "wqs-Ur-hT7"; */
+"wqs-Ur-hT7.title" = "返回";
+
+/* Class = "UIViewController"; title = "编辑学校"; ObjectID = "zQC-uL-Rsb"; */
+"zQC-uL-Rsb.title" = "编辑学校";

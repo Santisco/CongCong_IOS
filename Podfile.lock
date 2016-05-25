@@ -20,16 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - JRSwizzle (1.0)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - JRSwizzle (~> 1.0)
   - SDWebImage (~> 3.7.3)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
 COCOAPODS: 0.39.0

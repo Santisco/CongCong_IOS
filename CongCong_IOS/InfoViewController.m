@@ -7,6 +7,7 @@
 //
 
 #import "InfoViewController.h"
+#import "AFNetWorking.h"
 
 @interface InfoViewController ()
 
@@ -46,8 +47,62 @@
 - (IBAction)selectWoman:(id)sender {
 }
 
+- (IBAction)finishRegister:(id)sender {
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
+    NSMutableDictionary *plist = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    NSString *apiUrl = [plist objectForKey:@"apiUrl"];
+    apiUrl = [apiUrl stringByAppendingString:@"/sign-up"];
+    NSLog(@"%@",apiUrl);
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString: apiUrl]];
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    NSMutableDictionary *dictt = [NSMutableDictionary dictionary];
+    dictt[@"nick_name"] = _nameField.text;
+    dictt[@"password"] = _passNum;
+    dictt[@"email"] = _emailNum;
+    dictt[@"mobile"] = _phoneNum;
+    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+    mgr.responseSerializer = [AFCompoundResponseSerializer serializer];
+    mgr.requestSerializer = [AFHTTPRequestSerializer serializer];
+    
+    [mgr POST:apiUrl parameters:dictt success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Success: %@", operation.responseString);
+        NSString *requestTmp = [NSString stringWithString:operation.responseString];
+        NSData *resData = [requestTmp dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:resData options:NSJSONReadingMutableLeaves error:nil];
+//将unicode转为汉字！！！！！
+        NSArray *itemsArray = [resultDic valueForKey:@"data"];
+        NSString *show = itemsArray[0];
+        NSLog(@"%@",show);
+        
+        NSString *judgeError = [resultDic objectForKey:@"error"];
+        NSInteger boolError = [judgeError integerValue];
+        NSString *showError = [NSString stringWithFormat:@"%ld",(long)boolError];
 
 
+    }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Failure: %@", error);
+    }];
+    [operation start];
+}
+
+/*
+ 将unicode转为汉字！！！！
+ */
+- (NSString *)replaceUnicode:(NSString *)unicodeStr {
+    
+    NSString *tempStr1 = [unicodeStr stringByReplacingOccurrencesOfString:@"\\u" withString:@"\\U"];
+    NSString *tempStr2 = [tempStr1 stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
+    NSString *tempStr3 = [[@"\"" stringByAppendingString:tempStr2] stringByAppendingString:@"\""];
+    NSData *tempData = [tempStr3 dataUsingEncoding:NSUTF8StringEncoding];
+    NSString* returnStr = [NSPropertyListSerialization propertyListFromData:tempData
+                                                           mutabilityOption:NSPropertyListImmutable
+                                                                     format:NULL
+                                                           errorDescription:NULL];
+    
+    //NSLog(@"Output = %@", returnStr);
+    
+    return [returnStr stringByReplacingOccurrencesOfString:@"\\r\\n" withString:@"\n"];
+}
 /*
  单击view，编辑结束
  */

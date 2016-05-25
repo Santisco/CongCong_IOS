@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "JRSwizzle/JRSwizzle.h"
+#import "NSDictionary+DictionaryOutput.m"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [NSDictionary jr_swizzleMethod:@selector(description) withMethod:@selector(my_description) error:nil];
+
     return YES;
 }
 
@@ -41,5 +45,4 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 @end

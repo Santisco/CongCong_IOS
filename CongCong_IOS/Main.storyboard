@@ -169,11 +169,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhe-mk-KDS">
-                                <rect key="frame" x="8" y="594" width="65" height="65"/>
-                                <color key="backgroundColor" red="0.89411764709999997" green="0.96078431369999995" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="菜单">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhe-mk-KDS">
+                                <rect key="frame" x="5" y="590" width="72" height="72"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.4823529412" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="32px 主页-1">
                                     <color key="titleColor" red="0.20784313730000001" green="0.4823529412" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -220,4 +219,7 @@
             <point key="canvasLocation" x="2908.5" y="577"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="32px 主页-1" width="32" height="32"/>
+    </resources>
 </document>

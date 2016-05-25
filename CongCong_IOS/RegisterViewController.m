@@ -55,40 +55,24 @@
 }
 
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if([segue.identifier isEqualToString:@"selfInfo"])
+    {
+        id theSegue = segue.destinationViewController;
+        [theSegue setValue:_phoneNum forKey:@"phoneNum"];
+        [theSegue setValue:_emailNum forKey:@"emailNum"];
+        [theSegue setValue:_passNum forKey:@"passNum"];
+    }
+    
+}
 
 
 - (IBAction)registorMake:(id)sender {
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
-    NSMutableDictionary *plist = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-    NSString *apiUrl = [plist objectForKey:@"apiUrl"];
-    apiUrl = [apiUrl stringByAppendingString:@"/sign-up"];
-    NSLog(@"%@",apiUrl);
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString: apiUrl]];
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     
-    NSMutableDictionary *dictt = [NSMutableDictionary dictionary];
-    dictt[@"nick_name"] = @"David";
-    dictt[@"password"] = _regisPass.text;
-    dictt[@"email"] = @"1111@qq.com";
-    dictt[@"mobile"] = _regisPhone.text;
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    mgr.responseSerializer = [AFCompoundResponseSerializer serializer];
-    mgr.requestSerializer = [AFHTTPRequestSerializer serializer];
-    
-    [mgr POST:apiUrl parameters:dictt success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Success: %@", operation.responseString);
-        
-    }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Failure: %@", error);
-        NSData *errorData = error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey];
-        NSDictionary *serializedData = [NSJSONSerialization JSONObjectWithData: errorData options:kNilOptions error:nil];
-        NSLog(@"error--%@",serializedData);
-        NSString *requestTmp = [NSString stringWithString:operation.responseString];
-        NSData *resData = [[NSData alloc] initWithData:[requestTmp dataUsingEncoding:NSUTF8StringEncoding]];
-        NSLog(@"%@",resData);
-
-    }];
-    [operation start];
-
+    _phoneNum = _regisPhone.text;
+    _emailNum = _regisQua.text;
+    _passNum = _regisPass.text;
+    [self performSegueWithIdentifier:@"selfInfo" sender:nil];
 }
 @end

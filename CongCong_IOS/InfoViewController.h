@@ -14,7 +14,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UIButton *manBtn;
 @property (weak, nonatomic) IBOutlet UIButton *womanBtn;
+@property (nonatomic,strong) NSString *phoneNum;
+@property (nonatomic,strong) NSString *emailNum;
+@property (nonatomic,strong) NSString *passNum;
 - (IBAction)selectMan:(id)sender;
 - (IBAction)selectWoman:(id)sender;
+- (IBAction)finishRegister:(id)sender;
 
 @end

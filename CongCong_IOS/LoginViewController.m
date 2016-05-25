@@ -62,9 +62,6 @@
 */
 
 - (IBAction)logIn:(id)sender {
-    if ([_username.text isEqualToString:@"wgl"]&&[_password.text isEqualToString:@"123"]) {
-        [self performSegueWithIdentifier:@"linkMain" sender:nil];
-    }
     NSArray *cookiesArray = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
     for (NSHTTPCookie *cookie in cookiesArray) {
         [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
@@ -86,6 +83,7 @@
 
     [mgr POST:apiUrl parameters:dictt success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Success: %@", operation.responseString);
+        [self performSegueWithIdentifier:@"linkMain" sender:nil];
     }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failure: %@", error);
     }];
