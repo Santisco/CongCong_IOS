@@ -22,6 +22,25 @@
             </objects>
             <point key="canvasLocation" x="-954" y="327"/>
         </scene>
+        <!--QQ登陆-->
+        <scene sceneID="tx0-cB-jes">
+            <objects>
+                <viewController title="QQ登陆" id="mw7-hC-gUl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ON-RC-W8k"/>
+                        <viewControllerLayoutGuide type="bottom" id="t7A-ya-JEK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tDA-j0-dHb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ga0-ji-BDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495.5" y="-398.5"/>
+        </scene>
         <!--登陆-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -39,14 +58,7 @@
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="请输入用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXd-0P-wEW">
                                 <rect key="frame" x="125" y="296" width="169" height="30"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="gamelife">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="backTap:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="R8R-kg-c37"/>
@@ -55,15 +67,8 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSg-rN-Cdp">
                                 <rect key="frame" x="125" y="351" width="169" height="30"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="password">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="smallSystem"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="backTap:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aEV-G5-VhS"/>
                                     <action selector="finishEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="1mA-NQ-pac"/>
@@ -98,7 +103,7 @@
                                     <color key="titleColor" red="0.20784313725490197" green="0.4823529411764706" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fTS-zH-9Jl" kind="show" id="OSz-c4-bIt"/>
+                                    <action selector="jumpRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1g-ou-uY3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXX-Tx-0EM">
@@ -117,6 +122,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fG-0u-pOh">
                                 <rect key="frame" x="172" y="576" width="31" height="30"/>
                                 <color key="backgroundColor" red="0.50196078430000002" green="0.71764705880000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="mw7-hC-gUl" kind="show" id="GMm-pw-Dye"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -130,11 +138,12 @@
                         <outlet property="password" destination="jSg-rN-Cdp" id="d54-hc-yHc"/>
                         <outlet property="username" destination="NXd-0P-wEW" id="I1S-v0-h2L"/>
                         <segue destination="nZE-Hu-QzT" kind="show" identifier="linkMain" id="0PI-B4-22z"/>
+                        <segue destination="fTS-zH-9Jl" kind="show" identifier="jumpRegister" id="big-eK-QTO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-506.5" y="326.5"/>
+            <point key="canvasLocation" x="-495.5" y="326.5"/>
         </scene>
         <!--Main-->
         <scene sceneID="cWv-sl-wKO">
@@ -142,7 +151,7 @@
                 <viewControllerPlaceholder storyboardName="Main" id="nZE-Hu-QzT" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNU-wX-x9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-506.5" y="841"/>
+            <point key="canvasLocation" x="-496" y="841"/>
         </scene>
         <!--注册-->
         <scene sceneID="SBK-BL-n6S">
@@ -390,6 +399,7 @@
                         <outlet property="nameField" destination="9mT-03-GNV" id="z3a-KS-3hv"/>
                         <outlet property="porButton" destination="4ks-Yq-4wu" id="gju-kF-70f"/>
                         <outlet property="womanBtn" destination="ABA-r4-iKf" id="rHZ-8A-oPp"/>
+                        <segue destination="K2B-6t-ym4" kind="show" identifier="solveRegister" id="xp2-yW-lu3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3C-8h-Upa" userLabel="First Responder" sceneMemberID="firstResponder"/>

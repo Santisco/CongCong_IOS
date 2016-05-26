@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIImageView *groundImage;
 - (IBAction)logIn:(id)sender;
+- (IBAction)jumpRegister:(id)sender;
 
 @end

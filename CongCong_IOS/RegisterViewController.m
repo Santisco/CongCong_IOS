@@ -8,6 +8,7 @@
 
 #import "RegisterViewController.h"
 #import "AFNetWorking.h"
+#import "SVProgressHUD.h"
 
 @interface RegisterViewController ()
 
@@ -55,6 +56,20 @@
 }
 
 
+- (IBAction)registorMake:(id)sender {
+    [SVProgressHUD showWithMaskType: SVProgressHUDMaskTypeBlack];
+    [self performSelector:@selector(jumpToRegister) withObject:nil afterDelay:0.6];
+}
+
+- (void)jumpToRegister{
+    [SVProgressHUD dismiss];
+    _phoneNum = _regisPhone.text;
+    _emailNum = _regisQua.text;
+    _passNum = _regisPass.text;
+    [self performSegueWithIdentifier:@"selfInfo" sender:nil];
+
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if([segue.identifier isEqualToString:@"selfInfo"])
@@ -68,11 +83,4 @@
 }
 
 
-- (IBAction)registorMake:(id)sender {
-    
-    _phoneNum = _regisPhone.text;
-    _emailNum = _regisQua.text;
-    _passNum = _regisPass.text;
-    [self performSegueWithIdentifier:@"selfInfo" sender:nil];
-}
 @end

@@ -8,6 +8,7 @@
 
 #import "InfoViewController.h"
 #import "AFNetWorking.h"
+#import "SVProgressHUD.h"
 
 @interface InfoViewController ()
 
@@ -48,6 +49,11 @@
 }
 
 - (IBAction)finishRegister:(id)sender {
+    [SVProgressHUD showWithMaskType: SVProgressHUDMaskTypeBlack];
+    [self performSelector:@selector(requestForRegister) withObject:nil afterDelay:0.6];
+}
+
+- (void)requestForRegister{
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
     NSMutableDictionary *plist = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
     NSString *apiUrl = [plist objectForKey:@"apiUrl"];
@@ -69,16 +75,19 @@
         NSString *requestTmp = [NSString stringWithString:operation.responseString];
         NSData *resData = [requestTmp dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:resData options:NSJSONReadingMutableLeaves error:nil];
-//将unicode转为汉字！！！！！
-        NSArray *itemsArray = [resultDic valueForKey:@"data"];
-        NSString *show = itemsArray[0];
-        NSLog(@"%@",show);
-        
         NSString *judgeError = [resultDic objectForKey:@"error"];
         NSInteger boolError = [judgeError integerValue];
-        NSString *showError = [NSString stringWithFormat:@"%ld",(long)boolError];
-
-
+        if (boolError ==1) {
+            NSArray *itemsArray = [resultDic valueForKey:@"data"];
+            NSString *show = itemsArray[0];
+            [SVProgressHUD dismissWithError:show];
+        }
+        //将unicode转为汉字！！！！！
+        if (boolError ==0) {
+            [SVProgressHUD dismissWithSuccess:@"注册成功"];
+        }
+        
+        
     }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failure: %@", error);
     }];

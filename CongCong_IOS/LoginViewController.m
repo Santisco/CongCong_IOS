@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "SVProgressHUD.h"
 
 @interface LoginViewController ()
 
@@ -62,6 +63,11 @@
 */
 
 - (IBAction)logIn:(id)sender {
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+    [self performSelector:@selector(requestForLogin) withObject:nil afterDelay:0.6];
+}
+
+- (void)requestForLogin{
     NSArray *cookiesArray = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
     for (NSHTTPCookie *cookie in cookiesArray) {
         [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
@@ -80,16 +86,35 @@
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
     mgr.responseSerializer = [AFCompoundResponseSerializer serializer];
     mgr.requestSerializer = [AFHTTPRequestSerializer serializer];
-
+    
     [mgr POST:apiUrl parameters:dictt success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Success: %@", operation.responseString);
-        [self performSegueWithIdentifier:@"linkMain" sender:nil];
+        NSString *requestTmp = [NSString stringWithString:operation.responseString];
+        NSData *resData = [requestTmp dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:resData options:NSJSONReadingMutableLeaves error:nil];
+        NSString *responceCode = [resultDic objectForKey:@"response_code"];
+        if ([responceCode isEqualToString:@"4050"]) {
+            [SVProgressHUD dismissWithSuccess:@"登录成功"];
+            [self performSegueWithIdentifier:@"linkMain" sender:nil];
+        }
+        if ([responceCode isEqualToString:@"4033"]) {
+            [SVProgressHUD dismissWithError:@"密码不正确！"];
+        }
     }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failure: %@", error);
     }];
     [operation start];
 
-    
+}
+
+- (IBAction)jumpRegister:(id)sender {
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+    [self performSelector:@selector(jumpWithSelector) withObject:nil afterDelay:0.8];
+}
+
+- (void)jumpWithSelector{
+    [SVProgressHUD dismiss];
+    [self performSegueWithIdentifier:@"jumpRegister" sender:nil];
 }
 
 @end
