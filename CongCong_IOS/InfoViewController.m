@@ -85,6 +85,7 @@
         //将unicode转为汉字！！！！！
         if (boolError ==0) {
             [SVProgressHUD dismissWithSuccess:@"注册成功"];
+            [self performSegueWithIdentifier:@"solveRegister" sender:nil];
         }
         
         
